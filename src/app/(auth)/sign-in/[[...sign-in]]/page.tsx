@@ -2,9 +2,9 @@ import { SignIn} from '@clerk/nextjs'
 import { Suspense } from 'react';
 export default function page() {
     return (
-      <div className="h-[85vh] w-full flex flex-col justify-center items-center">
+      <div className="h-[100vh] bg-red-100 w-full flex justify-center items-center">
        <Suspense fallback={"Loading"}>
-             <SignIn path='/sign-in' signUpFallbackRedirectUrl='/home'/>
+             <SignIn path='/sign-in'/>
        </Suspense>
       </div>
     );
