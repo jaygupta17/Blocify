@@ -9,7 +9,7 @@ import logo from './logo.png';
 
 const Header = () => {
     return (
-        <div className='flex flex-center-between py-8'>
+        <div className='flex flex-center-between h-[15vh]'>
             <div className="container flex flex-center-between h-16 max-w-screen-2xl items-center">
             <div className="font-extrabold">
                 <Image src={logo} alt='logo' height={250} width={250}></Image>
