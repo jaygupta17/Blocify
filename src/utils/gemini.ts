@@ -1,12 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { GoogleGenerativeAI } from "@google/generative-ai"
 
-const apiKey = process.env.GEMINI_API_KEY! ;
+const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY! ;
 
-const genAI = new GoogleGenerativeAI(
-  "");
+const genAI = new GoogleGenerativeAI("AIzaSyC3MKINHqGKH6LRKptFyU6Z6KvSB-vph50");
 
 export const textTotext =async (inp: string) =>{
   const model = genAI.getGenerativeModel({ model: "gemini-pro"});
