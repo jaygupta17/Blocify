@@ -1,6 +1,7 @@
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
 import { BiLogoPinterestAlt } from "react-icons/bi";
+// import Image from "next/image";
 
 function Footer() {
   const iconsTab = [
@@ -17,11 +18,7 @@ function Footer() {
           <div className="flex justify-between flex-col md:flex-row  items-center md:items-start  md:gap-[5rem] text-left">
             {/* logo side */}
             <div className="flex flex-col w-1/2 md:p-0 py-4 gap-8">
-              <img
-                src={"https://i.imgur.com/520zDfd.png"}
-                alt="footer_logo"
-                className="w-[18rem]"
-              />
+              {/* //img here */}
               <p className="text-[15px] font-medium text-[#646464]">
                 Take your health and body to the next level with our
                 comprehensive program designed to help you reach your fitness
