@@ -2,6 +2,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
 import { BiLogoPinterestAlt } from "react-icons/bi";
 // import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   const iconsTab = [
@@ -12,14 +13,14 @@ function Footer() {
   ];
   return (
     <>
-      <footer className="bg-white w-screen">
-        <div className="container mx-auto  py-[10rem]">
+      <footer className="bg-white w-screen h-[10%] mt-10">
+        <div className="container mx-auto  pt-[1%] pb-6">
           {/* footer div all */}
           <div className="flex justify-between flex-col md:flex-row  items-center md:items-start  md:gap-[5rem] text-left">
             {/* logo side */}
-            <div className="flex flex-col w-1/2 md:p-0 py-4 gap-8">
+            <div className="flex flex-col w-1/3 md:p-0 py-4 gap-6">
               {/* //img here */}
-              <p className="text-[15px] font-medium text-[#646464]">
+              <p className="text-[15px] font-medium text-[#646464] mt-4">
                 Take your health and body to the next level with our
                 comprehensive program designed to help you reach your fitness
                 goals.
@@ -38,62 +39,37 @@ function Footer() {
                   );
                 })}
               </div>
-              <p className="text-[16px] font-medium text-[#646464]">
+              {/* <p className="text-[16px] font-medium text-[#646464]">
                 Privacy Policy | © {new Date().getFullYear()} Gymate <br />{" "}
                 Design by{" "}
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.radiustheme.com/"
-                >
-                  RadiusTheme
-                </a>
-              </p>
+                
+              </p> */}
             </div>
 
             {/* middle div */}
-            <div className="flex flex-col gap-8 relative">
+            <div className="flex flex-col gap-4 relative">
               <p className="text-[22px] font-bold footer-main">Our Classes</p>
 
               <span className="top-[33px] absolute w-[7rem] h-[4px] bg-[#ff0366]"></span>
+              <p className="text-[16px] hover:text-[#ff0366] cursor-pointer text-[#646464] font-medium hover:font-bold">
+                <Link href="/">
+                Home
+                </Link>
+              </p>
 
               <p className="text-[16px] hover:text-[#ff0366] cursor-pointer text-[#646464] font-medium hover:font-bold">
-                Fitness Classes
+                <Link href="/about">
+                About
+                </Link>
               </p>
               <p className="text-[16px] hover:text-[#ff0366] cursor-pointer text-[#646464] font-medium hover:font-bold">
-                Aerobics Classes
+                <Link href="/contact">
+                Contact Us
+                </Link>
               </p>
-              <p className="text-[16px] hover:text-[#ff0366] cursor-pointer text-[#646464] font-medium hover:font-bold">
-                Power Yoga
-              </p>
-              <p className="text-[16px] hover:text-[#ff0366] cursor-pointer text-[#646464] font-medium hover:font-bold">
-                Learn Machines
-              </p>
-              <p className="text-[16px] hover:text-[#ff0366] cursor-pointer text-[#646464] font-medium hover:font-bold">
-                Full-body Strength
-              </p>
+              
             </div>
 
-            {/* right div */}
-            <div className="flex flex-col gap-8 relative">
-              <p className="text-[22px] font-bold footer-main">Working Hours</p>
-
-              <span className="top-[33px] absolute w-[7rem] h-[4px] bg-[#ff0366]"></span>
-
-              <p className="text-[16px]  text-[#646464] font-bold">
-                Monday - Friday:
-              </p>
-              <p className="text-[16px] text-[#646464] font-medium">
-                7:00am - 21:00pm
-              </p>
-              <p className="text-[16px] text-[#646464] font-bold">Saturday:</p>
-              <p className="text-[16px] text-[#646464] font-medium">
-                7:00am - 19:00pm
-              </p>
-              <p className="text-[16px] text-[#646464] font-bold ">
-                Sunday - Closed
-              </p>
-            </div>
 
             {/* middle div */}
             <span></span>
