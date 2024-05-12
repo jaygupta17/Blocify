@@ -1,4 +1,4 @@
-import { Button } from "@/compnents/ui/button";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { IoRocketSharp } from "react-icons/io5";

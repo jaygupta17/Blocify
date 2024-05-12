@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { Label } from "@/compnents/ui/label";
-import { Input } from "@/compnents/ui/inputs"
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/inputs"
 import { cn } from "@/lib/utils";
 
 export default function SignupFormDemo() {

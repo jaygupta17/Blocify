@@ -1,11 +1,11 @@
 import React from 'react'
 
-function mheader() {
+function page() {
   return (
     <div>
-      
+      Hiiiii
     </div>
   )
 }
 
-export default mheader
+export default page
