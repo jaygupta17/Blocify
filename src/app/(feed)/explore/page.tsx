@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Home() {
+function Explore() {
   return (
     <div className='h-[100vh] w-full flex justify-center items-center z-100'>
-      Home
+      Explore
     </div>
   )
 }
 
-export default Home
+export default Explore

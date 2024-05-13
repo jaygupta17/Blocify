@@ -1,9 +1,19 @@
 import "@/styles/global.css"
 
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui/resizable"
+
+ 
+
+
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider"
 import { ClerkProvider } from "@clerk/nextjs";
 import MainHead from "@/components/MainHeader/MainHead";
+import Search from "@/components/Searchpanel/SearchPanel";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,7 +37,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`font-sans ${inter.variable}`}>
+        <body className={`font-sans ${inter.variable} flex pl-[10vh]`}>
           <ThemeProvider
               attribute="class"
               defaultTheme="system"
@@ -35,7 +45,14 @@ export default function RootLayout({
               disableTransitionOnChange
               >
               <MainHead/>
-              {children}
+              <ResizablePanelGroup direction="horizontal">
+      <ResizablePanel >{children}</ResizablePanel>
+      <ResizableHandle />
+      <ResizablePanel maxSize={40} className="h-[100vh]" minSize={10}>
+        <Search/>
+      </ResizablePanel>
+    </ResizablePanelGroup>
+              
             </ThemeProvider> 
           </body>
       </html>

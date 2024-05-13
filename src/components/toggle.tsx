@@ -15,6 +15,12 @@ import {
 export function ModeToggle() {
   const { setTheme } = useTheme()
 
+  //function to set theme to dark by default: 
+  const aa = ()=>{
+    setTheme("dark") //Todo: replace with "system"
+  }
+  aa();
+  
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>

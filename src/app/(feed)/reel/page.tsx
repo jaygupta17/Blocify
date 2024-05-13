@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Home() {
+function Reel() {
   return (
     <div className='h-[100vh] w-full flex justify-center items-center z-100'>
-      Home
+      Reel
     </div>
   )
 }
 
-export default Home
+export default Reel

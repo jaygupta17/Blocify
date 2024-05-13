@@ -1,0 +1,5 @@
+1. Footer dark theme
+2. fix get started button in light mode
+3. signup,signin in center
+4. dark mode button in feed
+5. replace logo at sidebar
