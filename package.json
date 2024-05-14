@@ -16,11 +16,13 @@
     "@radix-ui/react-tooltip": "^1.0.7",
     "@splinetool/react-spline": "^2.2.6",
     "@tabler/icons-react": "^3.3.0",
+    "@types/mongoose": "^5.11.97",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
     "framer-motion": "^11.1.9",
     "lucide-react": "^0.378.0",
+    "mongoose": "^8.3.4",
     "next": "14.2.3",
     "next-themes": "^0.3.0",
     "react": "^18",
@@ -41,6 +43,6 @@
     "postcss": "^8",
     "tailwind-scrollbar": "^3.1.0",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5.4.5"
   }
 }

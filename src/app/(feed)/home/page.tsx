@@ -1,9 +1,14 @@
 import React from 'react'
-
-function Home() {
+import { getUsers } from "../../../lib/data";
+import { User } from '@/lib/model';
+async function Home() {
+  let users : any = await getUsers();
+  console.log(users);
   return (
     <div className='h-[100vh] w-full flex justify-center items-center z-100'>
-      Home
+  {users.map((user : any)=>{
+    <div>{user.name}</div>
+  })}
     </div>
   )
 }
