@@ -3,7 +3,7 @@ import {
   createRouteMatcher
 } from "@clerk/nextjs/server"
 
-const isProtectedRoute = createRouteMatcher(["/home" ,"/home/*" , "/profile", "/profile/*" , "/explore" , "/explore/*" , "/reel","/reel/*"])
+const isProtectedRoute = createRouteMatcher(["/home" , "/profile", "/explore" , "/reel"])
 
 export default clerkMiddleware((auth, request) => {
   if (isProtectedRoute(request)) auth().protect()

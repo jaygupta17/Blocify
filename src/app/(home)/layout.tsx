@@ -14,11 +14,11 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    default: "Canvas-AI",
-    template: "%s | Canvas-AI",
+    default: "Blockify",
+    template: "%s | Blockify",
   },
   description: "A online art evaluator and marketplace for all art fanatics",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "./logo.png" }],
 };
 
 export default function RootLayout({
