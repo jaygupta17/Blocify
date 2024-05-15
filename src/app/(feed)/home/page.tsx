@@ -7,7 +7,7 @@ async function Home() {
   return (
     <div className='h-[100vh] w-full flex justify-center items-center z-100'>
       {users.map((user : any)=>{
-        return(<div className='h-20 w-50 bg-red-100'>
+        return(<div key={user.id || user.username} className='h-20 w-50 bg-red-100'>
           {user.username}
         </div>);
       })}
