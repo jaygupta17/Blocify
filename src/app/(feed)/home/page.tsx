@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { use } from 'react'
 import { getUsers } from "../../../lib/data";
 import { User } from '@/lib/model';
 async function Home() {
@@ -7,9 +7,9 @@ async function Home() {
   return (
     <div className='h-[100vh] w-full flex justify-center items-center z-100'>
       {users.map((user : any)=>{
-        return(<li className='h-20 w-50 bg-red-100'>
+        return(<div className='h-20 w-50 bg-red-100'>
           {user.username}
-        </li>);
+        </div>);
       })}
     </div>
   )
