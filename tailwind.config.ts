@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss"
 const defaultTheme = require("tailwindcss/defaultTheme");
- 
+import flowbite from "flowbite-react/tailwind";
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
@@ -14,6 +14,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*/*.{ts,tsx}',
     "./src/**/*.{ts,tsx}",
+    flowbite.content()
 	],
   prefix: "",
   theme: {
@@ -89,7 +90,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate") , addVariablesForColors,require('tailwind-scrollbar-hide')],
+  plugins: [require("tailwindcss-animate"),flowbite.plugin() , addVariablesForColors,require('tailwind-scrollbar-hide')],
 } satisfies Config
 
 function addVariablesForColors({ addBase, theme }: any) {

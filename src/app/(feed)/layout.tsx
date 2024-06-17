@@ -11,7 +11,7 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
 import MainHead from "@/components/MainHeader/MainHead";
-import Search from "@/components/Searchpanel/SearchPanel";
+import {Search} from "@/components/Searchpanel/SearchPanel";
 
 const inter = Inter({
   subsets: ["latin"],
