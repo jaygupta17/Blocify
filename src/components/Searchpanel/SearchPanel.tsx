@@ -1,7 +1,9 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import {Card} from "flowbite-react"
 import { ProfileCardLight } from './prof-card'
+import { useWeb3 } from '@/context'
 
 const Users = [
     {
@@ -15,9 +17,12 @@ const Users = [
 ]
 
 export function Search() {
+  const {account} = useWeb3();
+
+
   return (
     <div className='w-full gap-y-4 p-4  flex flex-col justify-center items-center z-100'>
-
+      {account.name}
 <form className="max-w-md w-full p-4 mx-auto">   
     <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
     <div className="relative">

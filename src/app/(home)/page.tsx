@@ -2,6 +2,7 @@ import { auth } from "@clerk/nextjs/server";
 import Background from "@/components/Background";
 import HoverBorderGradientDemo from "@/components/Buttonss";
 import Link from "next/link";
+import { useWeb3 } from "@/context";
 
 export default function RetroGridDemo() {
   const { userId } = auth();
