@@ -12,6 +12,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
 import MainHead from "@/components/MainHeader/MainHead";
 import {Search} from "@/components/Searchpanel/SearchPanel";
+import { Web3Provider } from "@/web3provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={`font-sans ${inter.variable} flex pl-[10vh]`}>
+          <Web3Provider>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -44,14 +46,15 @@ export default function RootLayout({
           >
             <MainHead />
             <ResizablePanelGroup direction="horizontal">
-              <ResizablePanel>{children}</ResizablePanel>
+              <ResizablePanel defaultSize={60}>{children}</ResizablePanel>
               <ResizableHandle />
-              <ResizablePanel maxSize={40} className="h-[100vh]" minSize={30}>
+              <ResizablePanel defaultSize={40} maxSize={40} className="h-[100vh]" minSize={30}>
                 <Search />
                 <AI />
               </ResizablePanel>
             </ResizablePanelGroup>
           </ThemeProvider>
+          </Web3Provider>
         </body>
       </html>
     </ClerkProvider>

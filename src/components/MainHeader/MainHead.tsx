@@ -30,6 +30,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import Link from "next/link";
+import { ConnectBtn } from "../connectBtn";
 function MainHead() {
   return (
     <aside className="fixed left-0 hidden h-screen w-[10vh] flex-col border-r bg-background sm:flex">
@@ -84,6 +85,12 @@ function MainHead() {
                 <PlusSquare className="h-[4vh] w-[4vw]" />
                 <span className="sr-only">Create</span>
               </Link>
+            </TooltipTrigger>
+            <TooltipContent side="right">Create</TooltipContent>
+          </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <ConnectBtn/>
             </TooltipTrigger>
             <TooltipContent side="right">Create</TooltipContent>
           </Tooltip>
