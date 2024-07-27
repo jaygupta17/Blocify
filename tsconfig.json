@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/lib/connectToDb.js", "src/lib/model.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/lib/connectToDb.js", "src/lib/model.js", "src/contract/contract.js", "src/context.js"],
   "exclude": ["node_modules"]
 }
